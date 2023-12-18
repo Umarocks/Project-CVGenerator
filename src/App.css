@@ -1,0 +1,389 @@
+h1,
+p,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.CVGeneratorContainer {
+  border-radius: 16px;
+  width: 100%;
+  background-color: white;
+  padding-top: 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 60dvh;
+  justify-content: space-between;
+  align-items: center;
+  color: #200e32;
+}
+
+.CVGeneratorContainer img {
+  width: 72px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.CVGeneratorContainerHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CVGeneratorContainerHeader p {
+  font-size: 1.4rem;
+  margin: 0%;
+}
+
+.Input {
+  width: 45%;
+  height: 100dvh;
+}
+
+.Input img {
+  width: 24px;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Display {
+  scrollbar-width: none;
+  overflow-y: auto;
+  height: 100dvh;
+  width: 45%;
+  padding-top: 0px;
+  background-color: white;
+}
+
+.SaveResume {
+  margin-bottom: 24px;
+  background-color: white;
+  padding: 24px 18px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+}
+
+.SaveResumeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+.SaveResumeContainer p {
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+.DownloadBtn {
+  padding: 8px 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: white;
+}
+svg {
+  width: 24px;
+  height: auto;
+}
+
+.GeneralInfoContainer,
+.EducationInfoContainer,
+.ProfessionalInfoConatiner {
+  margin-bottom: 24px;
+  background-color: white;
+  padding: 24px 18px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.GeneralInfo,
+.EducationInfo,
+.ProfessionalInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GeneralInfoIconAndDropDown,
+.ProfessionalInfoDropDownIcon,
+.EducationInfoDropDownIcon {
+  display: flex;
+}
+.GeneralInfoIconAndHeading,
+.EducationInfoIconAndHead,
+.ProfessionalInfoIconAndHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.GeneralInfoDropDown,
+.EducationInfoDropDown,
+.ProfessionalInfoDropDown {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  background-color: #eef0f4;
+  border: none;
+  border-radius: 12px;
+  height: 2.5rem;
+  padding: 0 12px;
+  outline: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.filling-form label {
+  padding-left: 12px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.form-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.save-form {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 16px;
+  border: none;
+  transition:
+    box-shadow 0.2s ease 0s,
+    -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s,
+    transform 0.1s ease 0s;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: #fff;
+}
+
+textarea {
+  padding: 0.5rem;
+}
+.displayContainer {
+  width: 100%;
+  padding: 24px 48px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-height: 600px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.entry > .form-city-country > .city::after {
+  content: ",";
+  margin-right: 5px;
+}
+
+.entry > .form-dates > p:first-child::after {
+  content: "  -";
+}
+
+.entry > .form-dates > p:first-child {
+  margin-right: 5px;
+}
+
+.entry > .jobTitle {
+  font-weight: 700;
+}
+
+.entry > .company {
+  font-style: italic;
+}
+.cv-basic-info {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cv-basic-info > p {
+  height: fit-content;
+  font-size: 0.8rem;
+}
+
+.cv-basic-info > p.fullName {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cv-basic-info > p.phone {
+  margin: 0 12px;
+}
+
+.cv-education-info,
+.cv-pro-info {
+  min-height: 200px;
+  height: fit-content;
+}
+
+.cv-section-title {
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  /* font-size: 0.9rem; */
+}
+
+.cv-education-info > .entry:first-of-type,
+.cv-pro-info > .entry:first-of-type {
+  margin-top: 12px;
+}
+
+.cv-education-info > .entry {
+  display: grid;
+  grid-template-areas:
+    "cv-degree-school . . . . cv-dates"
+    ". . . . . cv-city-country";
+}
+
+.cv-degree-school,
+.cv-dates,
+.cv-city-country {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+}
+
+.cv-degree-school {
+  grid-area: cv-degree-school;
+}
+
+.entry > .cv-degree-school > .degree {
+  font-weight: 700;
+}
+
+.entry > .cv-degree-school > .school {
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.cv-dates {
+  grid-area: cv-dates;
+  justify-self: flex-end;
+}
+
+.entry > .cv-dates > .startDate,
+.entry > .cv-dates > .startDatePro {
+  margin-right: 5px;
+}
+
+.cv-city-country {
+  grid-area: cv-city-country;
+  justify-self: flex-end;
+}
+
+.entry > .cv-city-country > .city,
+.entry > .cv-jobTitle-company > .jobTitle {
+  margin-right: 5px;
+}
+
+.entry > .cv-degree-school > .degree::after,
+.entry > .cv-city-country > .city::after,
+.entry > .cv-jobTitle-company > .jobTitle::after {
+  content: ",";
+}
+
+.entry > .cv-dates > .startDate::after,
+.entry > .cv-dates > .startDatePro::after {
+  content: "  -";
+}
+
+.mainTasks {
+  white-space: pre-line;
+  font-size: 0.55rem;
+}
+
+.cv-education-info > .entry,
+.cv-pro-info > .entry {
+  margin-bottom: 18px;
+}
+
+.cv-pro-info > .entry {
+  display: grid;
+  grid-template-areas:
+    "cv-jobTitle-company cv-jobTitle-company cv-jobTitle-company . . cv-dates"
+    "mainTasks mainTasks mainTasks mainTasks mainTasks mainTasks";
+}
+
+.cv-pro-info > .entry > .cv-jobTitle-company {
+  grid-area: cv-jobTitle-company;
+  display: flex;
+  flex-direction: row;
+}
+
+.entry > .cv-jobTitle-company > .jobTitle {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.entry > .cv-jobTitle-company > .company {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.cv-pro-info > .entry > .cv-dates {
+  grid-area: cv-dates;
+  font-size: 0.9rem;
+}
+
+.cv-pro-info > .entry > .cv-mainTasks {
+  grid-area: mainTasks;
+  margin-top: 5px;
+}
