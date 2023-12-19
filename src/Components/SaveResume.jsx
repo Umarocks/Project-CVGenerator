@@ -1,17 +1,13 @@
-
 import JsPDF from "jspdf";
 import React from "react";
 
 function SaveResume() {
   const generatePDF = () => {
-    const report = new JsPDF('portrait', 'pt', 'a4');
-    report.html(document.querySelector('#displayContainer'))
-      .then(() => {
-        report.save("report.pdf");
-      });
-    
+    const report = new JsPDF("portrait", "pt", "a4");
+    report.html(document.querySelector("#displayContainer")).then(() => {
+      report.save("report.pdf");
+    });
   };
-
   return (
     <div className="SaveResumeContainer">
       <div className="SaveResumeContainerHeader">
