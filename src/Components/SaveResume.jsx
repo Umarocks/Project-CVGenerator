@@ -1,13 +1,24 @@
+
+import JsPDF from "jspdf";
 import React from "react";
 
 function SaveResume() {
+  const generatePDF = () => {
+    const report = new JsPDF('portrait', 'pt', 'a4');
+    report.html(document.querySelector('#displayContainer'))
+      .then(() => {
+        report.save("report.pdf");
+      });
+    
+  };
+
   return (
     <div className="SaveResumeContainer">
       <div className="SaveResumeContainerHeader">
         <i>Save Your Resume</i>
       </div>
       <div className="DownloadBtn">
-        <button className="DownloadBtn" type="button">
+        <button className="DownloadBtn" onClick={generatePDF} type="button">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

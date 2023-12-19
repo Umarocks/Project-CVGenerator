@@ -8,6 +8,28 @@ h3 {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100dvh;
+  justify-content: space-between;
+  align-items: center;
+}
+.Cv {
+  width: 15%;
+  height: 100dvh;
+  padding: 36px 18px;
+}
+.InputAndDisplay {
+  width: 85%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 36px 18px;
+}
+
 .CVGeneratorContainer {
   border-radius: 16px;
   width: 100%;
@@ -38,25 +60,11 @@ body {
   margin: 0%;
 }
 
-.Input {
-  width: 45%;
-  height: 100dvh;
-}
-
 .Input img {
   width: 24px;
   height: auto;
   padding: 0;
   box-sizing: border-box;
-}
-
-.Display {
-  scrollbar-width: none;
-  overflow-y: auto;
-  height: 100dvh;
-  width: 45%;
-  padding-top: 0px;
-  background-color: white;
 }
 
 .SaveResume {
@@ -212,14 +220,16 @@ textarea {
 textarea {
   padding: 0.5rem;
 }
+.Display {
+  width: 45%;
+}
 .displayContainer {
   width: 100%;
   padding: 24px 48px;
   background-color: white;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  min-height: 600px;
+  box-shadow: rgba(99, 99, 99, 0.2);
+  min-height: 700px;
   height: fit-content;
-  box-sizing: border-box;
 }
 .entry > .form-city-country > .city::after {
   content: ",";

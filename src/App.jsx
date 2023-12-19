@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import GeneralInfo from "./Components/GeneralInfo";
 import EducationInfo from "./Components/EducationInfo";
@@ -6,6 +6,7 @@ import ProfessionalExperience from "./Components/ProfessionalExperience";
 import CVGenerator from "./Components/CVGenerator";
 import SaveResume from "./Components/SaveResume";
 import Display from "./Components/Display";
+
 function App() {
   const [generalInfoForm, setGeneralInfoForm] = useState("");
   const [educationInfoForm, setEducationInfoForm] = useState([]);
@@ -39,9 +40,9 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="Cv">
+        <header className="Cv">
           <CVGenerator />
-        </div>
+        </header>
         <div className="InputAndDisplay">
           <div className="Input">
             <div className="SaveResume">
@@ -51,17 +52,21 @@ function App() {
             <EducationInfo saveInput={saveInput} />
             <ProfessionalExperience saveInput={saveInput} />
           </div>
-          <div className="Display">
-            {(!generalEmpty || !educationEmpty || !professionalEmpty) && (
-              <Display
-                generalInfoForm={generalInfoForm}
-                professionalInfoForm={professionalInfoForm}
-                educationInfoForm={educationInfoForm}
-                generalEmpty={generalEmpty}
-                educationEmpty={educationEmpty}
-                professionalEmpty={professionalEmpty}
-              />
-            )}
+          <div className="Display" id="Display">
+            <div className="displayContainer" id="displayContainer">
+              {(!generalEmpty || !educationEmpty || !professionalEmpty) && (
+                <Display
+                  generalInfoForm={generalInfoForm}
+                  professionalInfoForm={professionalInfoForm}
+                  educationInfoForm={educationInfoForm}
+                  generalEmpty={generalEmpty}
+                  educationEmpty={educationEmpty}
+                  professionalEmpty={professionalEmpty}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                />
+              )}
+            </div>
           </div>
         </div>
       </div>
