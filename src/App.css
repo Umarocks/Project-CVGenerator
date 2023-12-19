@@ -224,7 +224,7 @@ textarea {
   width: 45%;
 }
 .displayContainer {
-  /* width: 100%; */
+  width: 100%;
   padding: 24px 48px;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2);
